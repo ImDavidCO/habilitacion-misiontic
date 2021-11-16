@@ -1,10 +1,14 @@
 import React from 'react'
+import PrivateRoutes from '../Components/PrivateRoutes'
 
-const PrivateLayout = () => {
+const PrivateLayout = ({children}) => {
     return (
-        <div>
+        <PrivateRoutes>
+            <div>
             este es mi PrivateLayout
-        </div>
+            {children}
+            </div>
+        </PrivateRoutes>
     )
 }
 
